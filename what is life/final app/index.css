@@ -1,0 +1,67 @@
+body {
+	font-family: "Open Sans";
+	background-color: whitesmoke;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 32px;
+	
+	border: none;
+    background-color: #b3b3b3;
+    color: black;
+    text-align: center center;
+    display: inline-block;
+    font-size: 16px;
+	
+	cursor: pointer;
+}
+
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.button:hover {
+    background-color: #d3d3d3;
+}
+
+#card {
+    width: 400px;
+    height: 150px;
+    border-radius: 25px 25px 25px 25px;
+
+    cursor: pointer;
+
+    color: black;
+    text-align: center;
+    font-size: 40px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+	
+	transition: background-color 0.5s;
+}
+
+.faceFront {
+    background: rgb(133, 227, 255);
+}
+
+.faceBack {
+    background: rgb(255, 209, 139);
+}
